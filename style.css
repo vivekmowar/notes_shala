@@ -1,0 +1,392 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+  }
+  
+  .enter-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .enter-btn:hover {
+    background-color: #444;
+  }
+  
+  body.dark-mode .enter-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .subject-tab {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .subject-tab:hover {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode .subject-tab {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #333;
+  }
+  
+  body.dark-mode .back-btn {
+    background-color: #ccc;
+    color: #111;
+  }
+  
+  .toggle-container {
+    margin-top: 40px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 28px;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+  
+  .toggle-label {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  /* Flag styles */
+.flag-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  
+  .flag-image {
+    width: 50px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .made-in-india {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+  }
+  /* Center the whole welcome content */
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+  }
+  
+  /* Main content */
+  .main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .enter-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* Black by default */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  .enter-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Dark mode toggle */
+  .toggle-container {
+    margin-top: 20px;
+  }
+  
+  /* Flag top right */
+  .flag-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  
+  .flag-image {
+    width: 50px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .made-in-india {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+  }
+  /* Center the entire content vertically and horizontally */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen */
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style the Enter button */
+.enter-btn {
+  display: inline-block;
+  padding: 14px 30px; /* Slightly bigger padding */
+  font-size: 1.2rem; /* Bigger font */
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.enter-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Flag styling */
+.flag-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.flag-image {
+  width: 40px;
+  height: auto;
+}
+
+.made-in-india {
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+  color: #555;
+}
+
+/* Toggle Switch Styling */
+.toggle-container {
+  margin-top: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+/* Toggle Switch Styling */
+.toggle-container {
+  margin-top: 50px; /* Push it lower */
+  margin-left: auto; /* Push to the right */
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 400px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+/* Dark mode base styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Headings and text */
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+/* Enter Button */
+body.dark-mode .enter-btn {
+  background-color: #333333;
+  color: white;
+}
+
+body.dark-mode .enter-btn:hover {
+  background-color: #555555;
+}
+
+/* Toggle label color */
+body.dark-mode .toggle-label {
+  color: #ffffff;
+}
+
+/* Made in India text */
+body.dark-mode .made-in-india {
+  color: #ccc;
+}
+
+  
